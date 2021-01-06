@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css full page scrolling effects.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+        }
+
+        .container .section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            scroll-snap-align: start;
+            background-blend-mode: multiply;
+        }
+
+        .container .section:nth-child(1) {
+            background: rgb(90, 240, 90) url(woman.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container .section:nth-child(2) {
+            background: rgb(230, 240, 90) url(woman\ 1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container .section:nth-child(3) {
+            background: rgb(5, 92, 173) url(woman\ 2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container .section:nth-child(4) {
+            background: rgb(240, 90, 215) url(logo\ one.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container .section:nth-child(5) {
+            background: rgb(109, 105, 105) url(tauch.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container .section:nth-child(6) {
+            background: #00f url(water.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container .section .content {
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+            min-width: 80%;
+            right: 10px;
+        }
+
+        .container .section .content h2 {
+            background: #fff;
+            color: #123451;
+            font-weight: 600;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 2em;
+
+        }
+
+        .container .section .content p {
+            background: #fff;
+            color: #123451;
+            font-weight: 300;
+            padding: 10px 20px;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="content">
+                <h2>section one page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quia nostrum saepe animi
+                    eius facere corporis amet quaerat harum, magni temporibus nihil qui recusandae deserunt. Quam,
+                    quasi. Officia animi nam doloribus repellat nulla. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Possimus libero voluptas optio rem deserunt. Velit pariatur obcaecati deleniti
+                    ipsam asperiores soluta totam, minus quod illum! Sunt sed praesentium autem repellendus, assumenda
+                    nemo vel esse maxime, voluptatibus odit perspiciatis corrupti facilis.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h2>section two page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quia nostrum saepe animi
+                    eius facere corporis amet quaerat harum, magni temporibus nihil qui recusandae deserunt. Quam,
+                    quasi. Officia animi nam doloribus repellat nulla. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Possimus libero voluptas optio rem deserunt. Velit pariatur obcaecati deleniti
+                    ipsam asperiores soluta totam, minus quod illum! Sunt sed praesentium autem repellendus, assumenda
+                    nemo vel esse maxime, voluptatibus odit perspiciatis corrupti facilis.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h2>section three page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quia nostrum saepe animi
+                    eius facere corporis amet quaerat harum, magni temporibus nihil qui recusandae deserunt. Quam,
+                    quasi. Officia animi nam doloribus repellat nulla. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Possimus libero voluptas optio rem deserunt. Velit pariatur obcaecati deleniti
+                    ipsam asperiores soluta totam, minus quod illum! Sunt sed praesentium autem repellendus, assumenda
+                    nemo vel esse maxime, voluptatibus odit perspiciatis corrupti facilis.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h2>section four pae</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quia nostrum saepe animi
+                    eius facere corporis amet quaerat harum, magni temporibus nihil qui recusandae deserunt. Quam,
+                    quasi. Officia animi nam doloribus repellat nulla. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Possimus libero voluptas optio rem deserunt. Velit pariatur obcaecati deleniti
+                    ipsam asperiores soluta totam, minus quod illum! Sunt sed praesentium autem repellendus, assumenda
+                    nemo vel esse maxime, voluptatibus odit perspiciatis corrupti facilis.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h2>section five page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quia nostrum saepe animi
+                    eius facere corporis amet quaerat harum, magni temporibus nihil qui recusandae deserunt. Quam,
+                    quasi. Officia animi nam doloribus repellat nulla. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Possimus libero voluptas optio rem deserunt. Velit pariatur obcaecati deleniti
+                    ipsam asperiores soluta totam, minus quod illum! Sunt sed praesentium autem repellendus, assumenda
+                    nemo vel esse maxime, voluptatibus odit perspiciatis corrupti facilis.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h2>section six page</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quia nostrum saepe animi
+                    eius facere corporis amet quaerat harum, magni temporibus nihil qui recusandae deserunt. Quam,
+                    quasi. Officia animi nam doloribus repellat nulla. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Possimus libero voluptas optio rem deserunt. Velit pariatur obcaecati deleniti
+                    ipsam asperiores soluta totam, minus quod illum! Sunt sed praesentium autem repellendus, assumenda
+                    nemo vel esse maxime, voluptatibus odit perspiciatis corrupti facilis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
